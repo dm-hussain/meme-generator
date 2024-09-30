@@ -12,7 +12,7 @@ function loadMeme(){
     }).then((data)=>{
         title.innerText= data.title;
         memeImg.src= data.url;
-        authorName.innerText= data.author;
+        authorName.innerText=   `Meme by: ${data.author} ` 
         
     });
 }
